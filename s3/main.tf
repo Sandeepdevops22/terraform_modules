@@ -5,11 +5,6 @@ resource "aws_instance" "ec2-instance" {
     instance_type = var.instance_type  # referring to instance_type variable
     vpc_security_group_ids = [aws_security_group.mysg.id]
 }
-
-resource "aws_s3_bucket" "sandeep" {
-    bucket = "mynameissandeeps31994"
-
-
 resource "aws_security_group" "mysg" {
     name = "allow-ssh"
     description = "Allow ssh traffic"
