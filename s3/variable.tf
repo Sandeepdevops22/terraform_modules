@@ -1,5 +1,9 @@
-variable "bucket_name" {}
+variable "ami_id" {}
 
-variable "environment" {}
+variable "instance_type" {}
 
-variable "owner" {}
+variable "vpc_id" {}
+
+variable "port" {}
+
+variable "cidr_blocks" {}
